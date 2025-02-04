@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+    <style>
+        code {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-Fonte</h2>
+    <p>A tag <code>&lt;code&gt;</code> formata o texto em uma fonte mono-espaçada, ou seja, todos os caracteres possuem a mesma largura, tornando o texto mais fácil de ler. <br> É ideal para usar ao exemplificar códigos, por exemplo:</p>
+    <p>Um código JavaScript sem a formatação code: document.getElementById('teste')</p>
+    <p>Um código JavaScript com a formatação code: <code>document.getElementById('teste')</code></p>
+    <h2>Preformatado</h2>
+    <p>A tag <code>&lt;pre&gt;</code> exibe o texto da forma em que foi escrito, onde espaços em brancos também são mantidos. <br> <br> Por exemplo, se quiser mostrar um exemplo de código identado, pode-se utilizar a tag <code>&lt;pre&gt;</code>:</p>
+    <p><pre>
+        <code>
+    num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é IMPAR')
+    print('Fim do Programa')
+        </code>
+    </pre>
+    </p>
+    <h2>Citações</h2>
+    <h3>Citações Simples</h3>
+    <p>A tag <code>&lt;q&gt;</code> é usada para citações simples e diretas, por exemplo: <br> <br> Como diria Chapolin Colorado: <q>Não contavam com minha astúcia!</q> </p>
+    <h3>Citações Complexas</h3>
+    <p>Para citações completas, de forma mais formal, utiliza-se a tag <code>&lt;blockquote&gt;</code>. Com ela, a linha é quebrada e o conteúdo é deslocado à direita. Para exemplificar: <br> <br> Como diria Sócrates: <blockquote>Só sei que nada sei.</blockquote> <br> Além desta formatação mais formal, com a tag <code>&lt;blockquote&gt;</code> é possível utilizar o atributo <code>cite</code>, onde você poderá colocar o link de onde foi retirado a citação usada. <br> <br> O link não será visível no site, porém será utilizado pelos mecanismos de busca para fazer a ligação entre o conteúdo e a fonte.</p>
+    <h3>Referenciar</h3>
+    <p>Agora, caso deseje que a fonte seja visível no paragráfo, invés de utilizar <code>cite</code> como atributo, você pode utilizar ela como uma tag. <br> Um exemplo de como ficaria uma citação completa com referência: <br> <br> Segundo Paul Singer: <blockquote cite="https://books.google.com.br/books?hl=pt-BR&lr=&id=BF8PCwAAQBAJ&oi=fnd&pg=PT5&dq=economia&ots=ouMBoT_fWl&sig=qGGqyOsEwi_g7C2yw5ryQToo0pk#v=onepage&q=economia&f=false">Podemos distinguir pelo menos três significados do termo "economia". O primeiro é a qualidade [...]</blockquote> <cite>SINGER, Paul. O que é Economia. 7. ed. São Paulo: Contexto, 2014</cite></p>
+    <h2>Abreviações</h2>
+    <p>Ao utilizar abreviações, podemos usar da tag <code>&lt;abbr&gt;</code> para criar um contexto de interação que ao passar o mouse em cima, irá exibir o nome completo da palavra abreviada. Por exemplo: <br> <br> <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+    <h2>Inversor de Texto</h2>
+    <p>Com a tag <code>&lt;bdo&gt;</code> é possível inverter a direção de um texto. Esta tag possui dois parâmetros utilizados com o atributo <code>dir</code> (direction, direção): <code>ltr</code> - que significa left to right, ou seja, inverte o texto que está na esquerda para a direita; e <code>rtl</code> - que inverte o texto que está na direita para a esquerda.  Exemplos: <br> <br> 
+    Sem a tag <code>&lt;bdo&gt;</code>: Olá, Mundo! <br>
+    Com a tag <code>&lt;bdo dir="rtl"&gt;</code> : <bdo dir="rtl">Olá, Mundo!</bdo> <br>
+    Com a tag <code>&lt;bdo dir="ltr"&gt;</code> : <bdo dir="ltr">Olá, Mundo!</bdo></p>
+    <p>No caso do último exemplo, o texto continuou na ordem correta pois a origem - forma em que o texto foi escrito - é a mesma direção de destino - left to right / da esquerda para direita.</p>
+    <p>A primeira vista a tag pode parecer inútil, e de fato pode ser que talvez você nunca vá utilizar ela, porém ela tem vários usos como criação de texto para Teleprompt, leitura de tela espelhada, e o mais comum, para a exibição correta de frases em idiomas como árabe, hebraíco, entre outros, onde o texto é escrito da direita para a esquerda.</p> <!-- https://stackoverflow.com/questions/75676197/what-is-the-use-case-of-the-bdo-element -->
+    <img src="Screenshot_1.png" alt="">
+</body>
+</html>

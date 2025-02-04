@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    background-color: rgb(234, 232, 255);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: blue;
+}
+
+h2 { 
+    color: rgb(0, 140, 255);
+}
+
+#principal {
+    text-align: center;
+    color: rgb(51, 3, 180);
+}
+
+#axis_header {
+    color: rgb(136, 7, 7);
+}
+
+.axis_sub {
+    color: rgb(197, 78, 78);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        p {
+            font-size: 16px;
+        }
+        code {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Listas</h1>
+    <h2>Lista Ordenada</h2>
+    <p>Para criar uma lista ordenada, ou seja, onde a <em>ordem</em> tem importância, utiliza-se a tag <code>&lt;<abbr title="ordered list">ol</abbr>&gt;</code> para delimitar onde começa e onde termina a lista, e a tag <code>&lt;<abbr title="list item">li</abbr>&gt;</code> para <strong>identificar</strong> os itens da lista. <br> <br> Exemplo de lista:</p>
+    <p>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </p>
+    <p>Para mudar a forma como a lista é numerada, utiliza-se o parâmetro <code>type</code>, seguido por um destes valores: </p>
+    <p>
+        <pre style="font-size: 14px;">
+    1 - Formato padrão de 1, 2, 3... <br>
+    A - Forma alfabetica maiúscula. Ex.: A, B, C, D... <br>
+    a - Forma alfabetica minúscula. Ex.: a, b, c, d... <br>
+    I - Numeral romano em maiúsculo. <br>
+    i - Numeral romano em minúsculo.
+        </pre>
+    </p>
+    <h3>Lista com valor 1</h3>
+    <p>
+        <ol type="1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </p>
+    <h4>Código</h4>
+    <p>
+        <pre>
+            <code>
+    &lt;ol type="1"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+            </code>
+        </pre>
+    </p>
+    <h3>Lista com valor a</h3>
+    <p>
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    </p>
+    <h4>Código</h4>
+    <p>
+        <pre>
+            <code>
+    &lt;ol type="a"&gt;
+        &lt;li&gt;Item 1&lt;/li&gt;
+        &lt;li&gt;Item 2&lt;/li&gt;
+        &lt;li&gt;Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+            </code>
+        </pre>
+    </p>
+    <h2>Lista Não Ordenada / Lista com Marcadores</h2>
+    <p>A lista não ordenada utiliza-se de marcadores para exibir os itens listados. Para criar uma lista não ordenada, utiliza-se a tag <code>&lt;<abbr title="unordered list">ul</abbr>&gt;</code>, e para os itens usa-se a tag <code>&lt;li&gt;</code>. <br> <br> Exemplo de lista de marcadores:</p>
+    <p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </p>
+    <p>Da mesma forma como nas listas ordenadas, também podemos utilizar o parâmetro <code>type</code> para mudar o formato dos marcadores, conforme a lista abaixo:</p>
+    <p>
+        <ul type="square">
+            <li>disc - Formato padrão, um círculo totalmente preto</li>
+            <li>circle - Um círculo de borda preta mas sem preenchimento</li>
+            <li>square - Um quadrado totalmente preto</li>
+        </ul>
+    </p>
+    <p><mark><strong>Lembre-se!</strong></mark> <br> É importante lembrar que estes parâmetros são soluções <em>temporárias</em>. A forma correta de definir estilos é utilizando as CSS.</p>
+    <h2>Lista de Definições / Lista de Termos</h2>
+    <p>A lista de definições é como se fosse um dicionário. Ela trabalha com termo e descrição:</p>
+    <hr>
+    <p><dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language: utilizada para criação de sites.</dd>
+        <br>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets: especifica o estilo dos sites.</dd>
+        <br>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação responsável pela interatividade em sites.</dd>
+    </dl></p>
+    <hr>
+    <p>Para criar uma lista de termos utilizamos a tag <code>&lt;<abbr title="definition list">dl</abbr>&gt;</code>, e para cada item (termo) utilizamos a tag <code>&lt;<abbr title="definition term">dt</abbr>&gt;</code> e para suas descrições utilizamos a tag <code>&lt;<abbr title="definition description">dd</abbr>&gt;</code>.</p>
+    <p>Exemplificando:
+        <pre>
+            <code>
+    &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;HyperText Markup Language: utilizada para criação de sites.&lt;/dd&gt;
+    &lt;/dl&gt;
+            </code>
+        </pre>
+        A descrição do termo é automaticamente alinhada à direita do termo.
+    </p>
+    <h2>Misturando Tipos de Lista</h2>
+    <p>É possível utilizar tipos de listas diferentes dentro de outra lista, ou seja, podemos começar uma lista ordenada, e no meio criar subitens em uma lista não ordenada. <br> Confira a imagem abaixo: <br>
+    <img src="Screenshot_2.png" alt="">
+    </p>
+</body>
+</html>

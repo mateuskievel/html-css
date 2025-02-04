@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJN Musashi</title>
+    <link rel="shortcut icon" href="midia/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="conteudo.css">
+    <style>
+        body {
+            background-image: linear-gradient(360deg, rgb(65, 1, 51), #000 30%, rgb(65, 1, 51));
+        }
+        h1 {
+            color: white;
+            background-color: rgb(119, 38, 196);
+        }
+        h2 {
+            color: white;
+            background-color: rgb(119, 38, 196);
+        }
+        p {
+            color: blueviolet;
+        }
+        hr {
+            color: blueviolet;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const adbotao = document.getElementById('adbotao');
+            const introducao = document.getElementById('introducao');
+            const saudacao = document.getElementById('saudacao');
+            const delayaudio = 200;
+            adbotao.addEventListener('click', function() {
+                saudacao.pause();
+                if (introducao.paused) {
+                    setTimeout(function() {
+                        introducao.play();
+                    }, delayaudio);
+                } else {
+                    introducao.pause();
+                    introducao.currentTime = 0;
+                }
+            });  
+        });
+    </script>
+</head>
+<body>
+    <audio id="saudacao" src="https://azurlane.netojuu.com/images/9/9d/Musashi_LogJP.ogg" autoplay></audio>
+    <h1>IJN Musashi</h1>
+    <br>
+    <main>
+        <div>
+            <a href="midia/imagens/musashi_de.png" target="_blank">
+                <picture>
+                    <source media="(max-width: 725px)" srcset="midia/imagens/musashi_250.png" type="image/png">
+                    <img src="midia/imagens/musashi_512.png" alt="IJN Musashi">
+                </picture>
+            </a>
+        </div>
+        <div id="divpad10">
+            <audio id="introducao" src="https://azurlane.netojuu.com/images/4/41/Musashi_SelfIntroJP.ogg"></audio>
+            <p><img id="adbotao" src="midia/imagens/audio20white.png" alt="Play" style="cursor: pointer;"> Me chamo Musashi, aquela que deveria mudar a maré em favor ao Império das Cerejeiras durante aquela guerra... Mas não adianta lamentar o passado. Desta vez eu irei proteger tudo que me é importante, custe o que custar.</p>
+        </div>
+        <div>
+            <picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/musashi_face1.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/musashi_face1.jpg" type="image/jpg"><img width="150px" src="midia/imagens/musashi_face1.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/musashi_face2.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/musashi_face2.jpg" type="image/jpg"><img width="150px" src="midia/imagens/musashi_face2.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/musashi_face3.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/musashi_face3.jpg" type="image/jpg"><img width="150px" src="midia/imagens/musashi_face3.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/musashi_face4.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/musashi_face4.jpg" type="image/jpg"><img width="150px" src="midia/imagens/musashi_face4.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/musashi_face5.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/musashi_face5.jpg" type="image/jpg"><img width="150px" src="midia/imagens/musashi_face5.jpg" alt=""></picture>
+
+        </div>
+    </main>
+    <div id="divpad25">
+        <h2>Papéis de Parede</h2>
+    </div>
+    <div>
+        <a href="midia/imagens/musashi_wa1.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/musashi_wa1-124.png" type="image/png"><source media="(max-width: 1150px)" srcset="midia/imagens/musashi_wa1-200.png" type="image/png"><img src="midia/imagens/musashi_wa1-300.png" alt=""></picture></a>
+        <a href="midia/imagens/musashi_wa2.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/musashi_wa2-124.png" type="image/png"><source media="(max-width: 1150px)" srcset="midia/imagens/musashi_wa2-200.png" type="image/png"><img src="midia/imagens/musashi_wa2-300.png" alt=""></picture></a>
+        <a href="midia/imagens/musashi_wa3.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/musashi_wa3-124.png" type="image/png"><source media="(max-width: 1150px)" srcset="midia/imagens/musashi_wa3-200.png" type="image/png"><img src="midia/imagens/musashi_wa3-300.png" alt=""></picture></a>
+    </div>
+    <div><a href="index.html" rel="prev" target="_self"><img src="midia/imagens/voltar25.png" alt="Voltar"></a></div>
+</body>
+<footer>
+    <hr>
+    <p id="copysize">Todos direitos reservados à &copy; Yostar e &copy; Manjuu Co. Ltd</p>
+</footer>
+</html>

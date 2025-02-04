@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMS Vanguard</title>
+    <link rel="shortcut icon" href="midia/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="conteudo.css">
+    <style>
+        body {
+            background-image: linear-gradient(360deg, rgb(255, 252, 238), #fff 30%, rgb(255, 252, 238));
+        }
+        h1 {
+            color: white;
+            background-color: rgb(218, 185, 1);
+        }
+        h2 {
+            color: white;
+            background-color: rgb(218, 185, 1);
+        }
+        p {
+            color: rgb(218, 185, 1);
+        }
+        hr {
+            color: gold;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const adbotao = document.getElementById('adbotao');
+            const introducao = document.getElementById('introducao');
+            const saudacao = document.getElementById('saudacao');
+            const delayaudio = 200;
+            adbotao.addEventListener('click', function() {
+                saudacao.pause();
+                if (introducao.paused) {
+                    setTimeout(function() {
+                        introducao.play();
+                    }, delayaudio);
+                } else {
+                    introducao.pause();
+                    introducao.currentTime = 0;
+                }
+            });  
+        });
+    </script>
+</head>
+<body>
+    <audio id="saudacao" src="https://azurlane.netojuu.com/images/5/55/Vanguard_LogJP.ogg" autoplay></audio>
+    <h1>HMS Vanguard</h1>
+    <br>
+    <main>
+        <div>
+            <a href="midia/imagens/vanguard_de.png" target="_blank">
+                <picture>
+                    <source media="(max-width: 725px)" srcset="midia/imagens/vanguard_de-250.png" type="image/png">
+                    <img src="midia/imagens/vanguard_de-512.png" alt="HMS Vanguard">
+                </picture>
+            </a>
+        </div>
+        <div id="divpad10">
+            <audio id="introducao" src="https://azurlane.netojuu.com/images/b/b5/Vanguard_SelfIntroJP.ogg"></audio>
+            <p><img id="adbotao" src="midia/imagens/audio20.png" alt="Play" style="cursor: pointer;"> Me chamo Vanguard, um encouraçado lançado após o fim da guerra. Lhe ofereço minha espada - que ela traga glória ao seu porto. Aliás, se eu puder fazer um pedido... por favor, NÃO chame meus canhões de "vintage".</p>
+        </div>
+        <div>
+            <img width="70px" src="midia/imagens/vanguard_face1.jpeg" alt="">&nbsp;<img width="70px" src="midia/imagens/vanguard_face2.jpeg" alt="">&nbsp;<img width="70px" src="midia/imagens/vanguard_face3.jpeg" alt="">&nbsp;<img width="70px" src="midia/imagens/vanguard_face4.jpeg" alt="">&nbsp;<img width="70px" src="midia/imagens/vanguard_face5.jpeg" alt="">
+        </div>
+    </main>
+    <div id="divpad25">
+        <h2>Papéis de Parede</h2>
+    </div>
+    <div>
+        <a href="midia/imagens/vanguard_wa1.jpg" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/vanguard_wa1-124.jpg" type="image/jpg"><source media="(max-width: 1025px)" srcset="midia/imagens/vanguard_wa1-220.jpg" type="image/jpg"><img src="midia/imagens/vanguard_wa1-300.jpg" alt=""></picture></a>
+        <a href="midia/imagens/vanguard_wa2.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/vanguard_wa2-124.png" type="image/png"><source media="(max-width: 1025px)" srcset="midia/imagens/vanguard_wa2-220.png" type="image/png"><img src="midia/imagens/vanguard_wa2-300.png" alt=""></picture></a>
+        <a href="midia/imagens/vanguard_wa3.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/vanguard_wa3-124.png" type="image/png"><source media="(max-width: 1025px)" srcset="midia/imagens/vanguard_wa3-220.png" type="image/png"><img src="midia/imagens/vanguard_wa3-300.png" alt=""></picture></a>
+    </div>
+    <div><a href="index.html" rel="prev" target="_self"><img src="midia/imagens/voltar25.png" alt="Voltar"></a></div>
+</body>
+<footer>
+    <hr>
+    <p id="copysize">Todos direitos reservados à &copy; Yostar e &copy; Manjuu Co. Ltd</p>
+</footer>
+</html>

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/* estilo global do site */
+
+body {
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: aliceblue;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Âncoras</title>
+    <style>
+        code {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando Links</h1>
+    <h2>Tag</h2>
+    <p>A tag utilizada para indicar onde será a "zona" clicável para levar ao novo site é a <code>&lt;<abbr title="anchor, âncora">a</abbr>&gt;</code>. <br> Dentro da tag <code>&lt;a&gt;</code> temos o parâmetro <code>href</code> que é onde colocamos a URL da página para qual o usuário será redicionado.</p>
+    <h2>Links Externos</h2>
+    <p>Um link externo é usado para redicionar o usuário para outro link que não faz parte do seu site. <br> Por exemplo:</p>
+    <p>Ao clicar <a href="https://anilist.co/user/RedoKinaito/" target="_blank" rel="external">aqui</a> você irá acessar meu perfil no AniList!</p>
+    <p>No caso de uma URL externa, após o parâmetro <code>href</code> também utilizamos o parâmetro <code>target</code> junto do atributo <code>_blank</code>, para assim dizermos que ao clicar no link, uma nova página será aberta em uma nova aba.</p>
+    <p>Além disso, também usamos o parâmetro <code>rel</code> com o atributo <code>external</code>. Esse conjunto não tem uma função visível ao usuário, mas ela serve para dizer aos mecanismos de busca que o link colocado é de uma fonte externa, ou seja, de outro site.</p>
+    <h3>nofollow</h3>
+    <p>O atributo <code>_nofollow</code> é utilizado com o parâmetro <code>rel</code> quando <strong>não</strong> queremos que o mecanismo de busca relacione o nosso site diretamente com aquele site externo. <br> <br> Isso é feito quando não temos total confiança ou certeza do que será aquele link externo, então usamos este atributo geralmente para redicionamento de links de anunciantes ou de uma fonte não confíavel.<br> <br> Porém não confunda! Não confíavel não se refere a colocar links maliciosos, e sim sobre sua credibilidade, por exemplo, para uma página de uma notícia a qual o conteúdo pode acabar sendo falso ou tendecioso.</p>
+    <h2>Links Internos</h2>
+    <p>Links internos são usados para redicionar o usuário para outra página do <em>seu</em> site.</p>
+    <p>Assim como nos links externos, utilizamos o parâmetro <code>target</code>, porém com o atributo <code>_self</code>, fazendo com que a página seja aberta na aba atual, sobrepondo a página anterior.</p>
+    <p>E para o parâmetro <code>rel</code> utilizamos ou o atributo <code>next</code> ou <code>prev</code>, que irá indicar que a página que será acessada deve ser considerada uma página seguinte a atual (next), ou uma página anterior a atual (previous).</p>
+</body>
+</html>

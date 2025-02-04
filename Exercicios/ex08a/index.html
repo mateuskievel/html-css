@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações</title>
+</head>
+<body>
+    <h1>Formatações de Texto</h1>
+    <h2>Negrito</h2>
+    <p>Para dar destaque em um <strong>termo</strong>, deixando-o em <strong>negrito</strong>, utiliza-se a tag
+        &lt;strong&gt;.</p>
+    <h2>Itálico</h2>
+    <p>Para deixar um termo em <em>itálico</em>, utiliza-se a tag &lt;em&gt;.</p>
+    <h2>Marcação</h2>
+    <p>Para <mark>marcar uma frase</mark>, utiliza-se a tag &lt;mark&gt;.</p>
+    <p>E para trocar <mark style="background-color: rgb(53, 122, 122); color: rgb(255, 255, 255);">a cor da marcação</mark>, devemos utilizar um <em>parâmetro</em> de CSS - o <strong>style</strong> -, dentro da tag mark.</p>
+    <p>Exemplo: &lt;mark style="background-color: rgb(77, 209, 209);"&gt;.</p>
+    <p><strong><mark>Atenção!</mark></strong></p>
+    <p>Utilizar o parâmetro style dentro da tag é uma forma ineficaz quando temos diversas marcações. Um método para definir a cor da marcação dentro <em>desta página</em> é criando uma tag style no cabeçalho (head).</p>
+    <p><strong>Exemplo:</strong></p>
+    <p>
+        &nbsp; &lt;head&gt; <br>
+        &nbsp; &nbsp; &nbsp; &lt;style&gt; <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mark { <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color: rgb(77, 209, 209); <br>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } <br>
+        &nbsp; &nbsp; &nbsp; &lt;/style&gt; <br>
+        &nbsp; &lt;/head&gt; <br>
+    </p>
+    <h2>Letras Grandes e Letras Pequenas</h2>
+    <h3>Letras Grandes</h3>
+    <p>A tag para deixar uma frase em uma <big>fonte maior</big> caiu em desuso, mas era representada pela tag &lt;big&gt;.</p>
+    <h3>Letras Pequenas</h3>
+    <p>Já para deixar em uma <small>fonte menor</small> é utilizada a tag &lt;small&gt;.</p>
+    <p>O porquê a tag &lt;big&gt; caiu em desuso mas a &lt;small&gt; continua ativa não têm uma resposta exata, mas eu concordo com o que o Professor Guanabara teorizou. A tag &lt;small&gt; continua em uso pois ela tem sentido, pois ela remete às letras pequenas vistas em contratos, não é apenas um estilo.</p>
+    <h2>Texto Excluído ou Texto Riscado</h2>
+    <p>Para indicar um texto que fazia parte do documento mas que agora deve ser <del>desconsiderado</del>, ou seja, não está mais em vigor, devemos utilizar a tag &lt;del&gt;.</p>
+    <h2>Texto Inserido ou Texto Sublinhado</h2>
+    <p>Para dar <em>ênfase</em> em um texto que foi <ins>incluido</ins> posteriormente, que passa a ser considerado agora, utiliza-se a tag &lt;ins&gt;.</p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para fazer com que um texto fique sobrescrito, ou seja, em uma letra pequena alinhada na parte superior da linha, para formar, por exemplo, uma fórmula como a x<sup>20</sup>+3, utiliza-se a tag &lt;sup&gt;.</p>
+    <h2>Texto Subescrito</h2>
+    <p>Já para formar um texto em que a letra fica pequena e alinhada na parte inferior, para formar, por exemplo, a fórmula H<sub>2</sub>0, utiliza-se a tag &lt;sub&gt;.</p>
+</body>
+</html>

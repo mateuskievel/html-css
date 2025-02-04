@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IJN Katsuragi</title>
+    <link rel="shortcut icon" href="midia/imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="conteudo.css">
+    <style>
+        body {
+            background-image: linear-gradient(360deg, rgb(219, 242, 243), #fff 30%, rgb(219, 242, 243));
+        }
+        h1 {
+            color: aliceblue;
+            background-color: #65c1de;
+        }
+        h2 {
+            color: aliceblue;
+            background-color: #65c1de;
+        }
+        p {
+            color: rgb(59, 57, 57);
+        }
+        hr {
+            color: aliceblue;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const adbotao = document.getElementById('adbotao');
+            const introducao = document.getElementById('introducao');
+            const saudacao = document.getElementById('saudacao');
+            const delayaudio = 200;
+            adbotao.addEventListener('click', function() {
+                saudacao.pause();
+                if (introducao.paused) {
+                    setTimeout(function() {
+                        introducao.play();
+                    }, delayaudio);
+                } else {
+                    introducao.pause();
+                    introducao.currentTime = 0;
+                }
+            });  
+        });
+    </script>
+</head>
+<body>
+    <audio id="saudacao" src="https://azurlane.netojuu.com/images/8/81/Katsuragi_LogJP.ogg" autoplay></audio>
+    <h1>IJN Katsuragi</h1>
+    <br>
+    <main>
+        <div>
+            <a href="midia/imagens/katsuragi_de.png" target="_blank">
+                <picture>
+                    <source media="(max-width: 725px)" srcset="midia/imagens/katsuragi_250.png" type="image/png">
+                    <img src="midia/imagens/katsuragi_512.png" alt="IJN katsuragi">
+                </picture>
+            </a>
+        </div>
+        <div id="divpad10">
+            <audio id="introducao" src="https://azurlane.netojuu.com/images/2/28/Katsuragi_SelfIntroJP.ogg"></audio>
+            <p><img id="adbotao" src="midia/imagens/audio20.png" alt="Play" style="cursor: pointer;"> Vamos dar algumas dicas de como se dar bem com uma garota fofa e alegre: Primeiro, é melhor você não achar nenhuma conversa dela chata! Em segundo lugar, não a obrigue a fazer tarefas idiotas, como carregar coisas! Por fim, peça com educação, não tente mandar nela! Tudo bem, a primeira lição é tudo, mas haverá mais no futuro... Ei, você está ouvindo?!</p>
+        </div>
+        <div>
+            <picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/katsuragi_face1.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_face1.jpg" type="image/jpg"><img width="150px" src="midia/imagens/katsuragi_face1.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/katsuragi_face2.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_face2.jpg" type="image/jpg"><img width="150px" src="midia/imagens/katsuragi_face2.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/katsuragi_face3.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_face3.jpg" type="image/jpg"><img width="150px" src="midia/imagens/katsuragi_face3.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/katsuragi_face4.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_face4.jpg" type="image/jpg"><img width="150px" src="midia/imagens/katsuragi_face4.jpg" alt=""></picture><picture><source width="70px" media="(max-width: 725px)" srcset="midia/imagens/katsuragi_face5.jpg" type="image/jpg"><source width="110px" media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_face5.jpg" type="image/jpg"><img width="150px" src="midia/imagens/katsuragi_face5.jpg" alt=""></picture>
+
+        </div>
+    </main>
+    <div id="divpad25">
+        <h2>Papéis de Parede</h2>
+    </div>
+    <div>
+        <a href="midia/imagens/katsuragi_wa1.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/katsuragi_wa1-124.png" type="image/png"><source media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_wa1-200.png" type="image/png"><img src="midia/imagens/katsuragi_wa1-300.png" alt=""></picture></a>
+        <a href="midia/imagens/katsuragi_wa2.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/katsuragi_wa2-124.png" type="image/png"><source media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_wa2-200.png" type="image/png"><img src="midia/imagens/katsuragi_wa2-300.png" alt=""></picture></a>
+        <a href="midia/imagens/katsuragi_wa3.png" rel="alternate" target="_blank"><picture><source media="(max-width: 725px)" srcset="midia/imagens/katsuragi_wa3-124.png" type="image/png"><source media="(max-width: 1150px)" srcset="midia/imagens/katsuragi_wa3-200.png" type="image/png"><img src="midia/imagens/katsuragi_wa3-300.png" alt=""></picture></a>
+    </div>
+    <div><a href="index.html" rel="prev" target="_self"><img src="midia/imagens/voltar25.png" alt="Voltar"></a></div>
+</body>
+<footer>
+    <hr>
+    <p id="copysize">Todos direitos reservados à &copy; Yostar e &copy; Manjuu Co. Ltd</p>
+</footer>
+</html>
