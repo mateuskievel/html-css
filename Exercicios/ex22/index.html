@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imagens de fundo</title>
+    <style>
+        div.square {
+            border: 2px solid black;
+            width: 900px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        div#solido { /* Cor Sólida */
+            background-color: blueviolet;
+        }
+
+        div#degrade { /* Cor Degradê */
+            background-image: linear-gradient(to bottom, yellow, orange);
+        }
+
+        div#imagem { /* Imagem Personalizada */
+            background-image: url(imagens/pattern002.png);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="square" id="solido"></div>
+    <p>Cor sólida</p>
+    <div class="square" id="degrade"></div>
+    <p>Cor degradê</p>
+    <div class="square" id="imagem"></div>
+    <p>Imagem</p>
+    <br>
+    <p><a href="fundorepeat.html">Próxima página</a></p>
 </body>
 </html>
