@@ -6,84 +6,6 @@
     <title>Cordel Moderno - Tecnologia Do Agora Por Milton Duarte</title>
     <link rel="shortcut icon" href="imagens/icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        #cabecalho {
-            position: relative;
-            height: 100%;
-        }
-
-        #titulo-cabeca {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .container {
-            position: relative;
-            background-color: #fff;
-            padding: 50px;
-            min-height: 65vh;
-        }
-
-        .containerBG {
-            position: relative;
-            background-color: rgb(106, 106, 106);
-            box-shadow: inset 2px 2px 10px 1px #00000060;
-            padding: 50px;
-            min-height: 65vh;
-        }
-
-        .conteudoUm {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            color: #000;
-            width: 95vw;
-            height: auto;
-        }
-
-        #conteudoDois {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            height: auto;
-            width: 95vw;
-        }
-
-        #conteudoDois p {
-            text-align: right;
-            width: 50%;
-            margin: auto;
-        }
-
-        .conteudoTres {
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.274);
-            padding: 10px;
-            border-radius: 2px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            height: auto;
-            width: fit-content;
-            color: #fff;
-        }
-
-        #flor {
-            background: rgb(106, 106, 106) url(imagens/background001.jpg) center right / cover no-repeat fixed;
-        }
-
-        #jornal {
-            background: rgb(106, 106, 106) url(imagens/background002.jpg) center right / cover no-repeat fixed;
-        }
-
-    </style>
 </head>
 <body>
     <header>
@@ -98,9 +20,13 @@
     </header>
 
     <main>
-        <div class="container">
+        <section class="container">
             <div id="conteudoDois">
-                <img style="max-width: 30%; height: 100%; margin: auto;" src="https://www.recantodasletras.com.br/usuarios/9806/fotos/1523623.jpg" alt="Cordel Moderno - Capa">
+                <picture style="margin: auto;">
+                    <source media="(max-width: 301px)" srcset="imagens/cordel-100.jpeg" type="image/jpeg">
+                    <source media="(max-width: 501px)" srcset="imagens/cordel-300.jpeg" type="image/jpeg">
+                    <img src="imagens/cordel-500.jpeg" alt="Cordel Moderno - Capa">
+                </picture>
                 <p>
                     Estou ficando cansado<br>
                     Da tal tecnologia<br>
@@ -111,8 +37,8 @@
                     Vou dizer tudo em poesia.
                 </p>
             </div>
-        </div>
-        <div class="containerBG" id="flor">
+        </section>
+        <section class="containerBG" id="flor">
             <div class="conteudoTres">
                 <p>
                     Não é mais como era antes<br>
@@ -124,8 +50,8 @@
                     E um coração desenhado.
                 </p>
             </div>
-        </div>
-        <div class="container">
+        </section>
+        <section class="container">
             <div class="conteudoUm">
                 <p style="text-align: right;">
                     Arroba agora não pesa<br>
@@ -135,7 +61,8 @@
                     Agora é .com<br>
                     Se o saite é muito bom<br>
                     Ele vale um alto preço.
-                </p>
+                </p><br>
+                <br>
                 <p>
                     Pra piorar a liguagem<br>
                     O emoticom é um risco<br>
@@ -146,8 +73,8 @@
                     Decifre esse rabisco.
                 </p>
             </div>
-        </div>
-        <div class="containerBG" id="jornal">
+        </section>
+        <section class="containerBG" id="jornal">
             <div class="conteudoTres">
                 <p style="text-align: right;">
                     Tenho saudade das cartas<br>
@@ -159,8 +86,8 @@
                     Nas linhas do coração.
                 </p>
             </div>
-        </div>
-        <div class="container">
+        </section>
+        <section class="container">
             <div class="conteudoUm">
                 <p>
                     Agora, escrevo e envio<br>
@@ -170,7 +97,8 @@
                     Abriu outro aplicativo<br>
                     O mundo ficou cativo<br>
                     Da tecnologia do agora.
-                </p>
+                </p><br>
+                <br>
                 <p style="text-align: right;">
                     Felizmente, pra orar<br>
                     Não precisa de internet<br>
@@ -181,11 +109,11 @@
                     Deixe que Deus interprete.
                 </p>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div>
-            <h3>Site criado por <a href="https://github.com/mateuskievel" target="_blank" rel="external">Mateus Kievel</a> para o <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVideo</a>.</h3>
+            <p>Site criado por <a href="https://github.com/mateuskievel" target="_blank" rel="external">Mateus Kievel</a> e <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">Gustavo Guanabara</a> para o <a href="https://www.cursoemvideo.com" target="_blank" rel="external">CursoemVideo</a>.</p>
         </div>
     </footer>
 </body>
