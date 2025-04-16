@@ -93,7 +93,13 @@ section.especial {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     background-color: #fff;
+}
+
+section.especial picture {
+    position: relative;
+    left: 129px;
 }
 
 section.normal {
@@ -107,6 +113,26 @@ section.background {
 section.background p {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.548);
+}
+
+section.background p {
+    font-family: var(--fonteConteudo);
+    font-weight: bold;
+    font-size: 4em;
+    margin-left: 5vw;
+    width: fit-content;
+    padding: 50px;
+}
+
+section.background div.conDireita {
+    position: relative;
+    width: 100%;
+}
+
+section.background div.conDireita p.pdireita {
+    position: relative;
+    text-align: right;
+    left: 62.5%;
 }
 
 footer {
